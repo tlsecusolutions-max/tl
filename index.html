@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TL Secu Solutions | Security Camera Installation & Sales</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a', // dark blue
+                        secondary: '#3b82f6', // bright blue
+                        accent: '#f59e0b', // amber
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Styles for Hero Overlay */
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50">
+
+    <!-- Header & Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-md transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-2 text-2xl font-bold text-primary">
+                <i class="fa-solid fa-shield-halved text-secondary"></i>
+                TL Secu Solutions
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-slate-600 hover:text-secondary font-medium transition-colors">Home</a>
+                <a href="#about" class="text-slate-600 hover:text-secondary font-medium transition-colors">About Us</a>
+                <a href="#services" class="text-slate-600 hover:text-secondary font-medium transition-colors">Services</a>
+                <a href="#contact" class="text-slate-600 hover:text-secondary font-medium transition-colors">Contact</a>
+                <a href="#contact" class="bg-primary hover:bg-blue-800 text-white px-5 py-2 rounded-md font-medium transition-colors shadow-sm">Get a Quote</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-600 hover:text-primary focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-6 pt-2 pb-6 flex flex-col space-y-4">
+                <a href="#home" class="mobile-link text-slate-600 hover:text-secondary font-medium block">Home</a>
+                <a href="#about" class="mobile-link text-slate-600 hover:text-secondary font-medium block">About Us</a>
+                <a href="#services" class="mobile-link text-slate-600 hover:text-secondary font-medium block">Services</a>
+                <a href="#contact" class="mobile-link text-slate-600 hover:text-secondary font-medium block">Contact</a>
+                <a href="#contact" class="mobile-link bg-primary text-center text-white px-5 py-2 rounded-md font-medium inline-block w-full">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="max-w-3xl">
+                <span class="inline-block py-1 px-3 rounded-full bg-secondary/20 text-secondary text-sm font-semibold tracking-wider mb-4 border border-secondary/30">
+                    PREMIUM SECURITY SYSTEMS
+                </span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                    Securing What Matters Most. <span class="text-secondary">Every Second.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl">
+                    Top-tier security camera installation and sales for residential and commercial properties. We provide crystal-clear surveillance to give you absolute peace of mind.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
+                    <a href="#services" class="bg-secondary hover:bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors shadow-lg shadow-blue-500/30 text-center">
+                        Explore Our Services
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors text-center">
+                        Contact Us Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image side -->
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-blue-50 rounded-xl transform rotate-3 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1510006767733-146b2b7ea6de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Security Camera Installation" class="relative z-10 rounded-xl shadow-xl w-full object-cover h-[400px] border border-slate-100" onerror="this.src='https://placehold.co/800x400/1e3a8a/FFFFFF?text=TL+Secu+Solutions'">
+                    
+                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl z-20 hidden md:block border border-slate-100">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-slate-800">10+</p>
+                                <p class="text-sm text-slate-500 font-medium">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text side -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-2">About TL Secu Solutions</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Your Trusted Partner in Modern Surveillance.</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        At TL Secu Solutions, we believe that safety is not a luxury, but a necessity. Founded with a commitment to providing state-of-the-art security, we specialize in the comprehensive sale, installation, and maintenance of advanced CCTV and IP camera systems.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Whether you are looking to protect your family home or secure a large commercial facility, our team of certified technicians designs custom solutions tailored to your specific vulnerabilities and budget.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle-check text-secondary mt-1 mr-3"></i>
+                            <span class="text-slate-700 font-medium">High-Definition & 4K Camera Options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle-check text-secondary mt-1 mr-3"></i>
+                            <span class="text-slate-700 font-medium">Expert, Clean, and Timely Installations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-circle-check text-secondary mt-1 mr-3"></i>
+                            <span class="text-slate-700 font-medium">24/7 Mobile Viewing Setup & Support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Products Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-2">What We Do</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Our Services & Products</h3>
+                <p class="text-slate-600">We offer end-to-end security solutions, from selecting the right hardware to seamless installation and ongoing maintenance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-slate-100 group">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Commercial Security" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-blue-50 text-secondary rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-building-shield"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3">Commercial Systems</h4>
+                        <p class="text-slate-600 mb-4">Comprehensive surveillance coverage for offices, warehouses, and retail spaces with scalable architecture.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-slate-100 group">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1557434316-e414c229712a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Residential Security" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-blue-50 text-secondary rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-house-chimney-crack"></i> <!-- Shield house alternative -->
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3">Residential Installation</h4>
+                        <p class="text-slate-600 mb-4">Discreet, high-performance cameras for your home. Keep an eye on your property directly from your smartphone.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-slate-100 group">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1549109926-58f039549485?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hardware Sales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-blue-50 text-secondary rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3">Equipment Sales</h4>
+                        <p class="text-slate-600 mb-4">We sell top-brand IP cameras, DVRs, NVRs, and accessories. Get the best hardware directly from authorized dealers.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-primary rounded-2xl p-8 md:p-12 text-center relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 -mt-10 -mr-10 text-white/10 text-9xl">
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="text-left">
+                        <h4 class="text-2xl md:text-3xl font-bold text-white mb-2">Need a Custom Security Plan?</h4>
+                        <p class="text-blue-100">Our experts offer free site assessments to determine your exact needs.</p>
+                    </div>
+                    <a href="#contact" class="shrink-0 bg-accent hover:bg-yellow-500 text-slate-900 px-8 py-4 rounded-md font-bold text-lg transition-colors shadow-lg">
+                        Book a Free Assessment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 pt-20 pb-10 border-t-4 border-secondary">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-1">
+                    <a href="#home" class="flex items-center gap-2 text-2xl font-bold text-white mb-6">
+                        <i class="fa-solid fa-shield-halved text-secondary"></i>
+                        TL Secu Solutions
+                    </a>
+                    <p class="text-slate-400 mb-6">
+                        Advanced security camera solutions protecting your home and business with state-of-the-art surveillance technology.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-secondary transition-colors"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Home</a></li>
+                        <li><a href="#about" class="hover:text-secondary transition-colors"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> About Us</a></li>
+                        <li><a href="#services" class="hover:text-secondary transition-colors"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Services</a></li>
+                        <li><a href="#contact" class="hover:text-secondary transition-colors"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-white text-lg font-bold mb-6">Contact Us</h4>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-secondary shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-medium mb-1">Head Office</h5>
+                                <p class="text-slate-400 text-sm">123 Security Avenue,<br>Tech District, 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-secondary shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-medium mb-1">Phone</h5>
+                                <p class="text-slate-400 text-sm">Main: (555) 123-4567<br>Support: (555) 987-6543</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-secondary shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-medium mb-1">Email</h5>
+                                <p class="text-slate-400 text-sm">info@tlsecusolutions.com<br>sales@tlsecusolutions.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-secondary shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-medium mb-1">Working Hours</h5>
+                                <p class="text-slate-400 text-sm">Mon - Fri: 8:00 AM - 6:00 PM<br>24/7 Emergency Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-slate-800 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; <span id="year"></span> TL Secu Solutions. All Rights Reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')){
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('py-2', 'shadow-md');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.add('py-4');
+                navbar.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
